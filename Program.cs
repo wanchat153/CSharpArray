@@ -44,14 +44,26 @@ namespace CSharpArray
             //Console.WriteLine("END");
             //Console.ReadLine();
 
-            //Loop foreach for Array
-            string[] country = { "Thailand", "Laos", "Singapore"};
-            foreach(string data in country)
-            {
-                Console.WriteLine(data);
-            }
-            Console.WriteLine("END");
-            Console.ReadLine();
+            ////Loop foreach for Array
+            //string[] country = { "Thailand", "Laos", "Singapore"};
+            //foreach(string data in country)
+            //{
+            //    Console.WriteLine(data);
+            //}
+            //Console.WriteLine("END");
+            //Console.ReadLine();
+
+            //Array 2 Dimension
+            string[,] customers = { { "GG", "WP" }, { "Wanchat", "M" } };
+            string[][] users = new string[3][]; //[3]Main data []data
+            users[0] = new string[3];
+            users[1] = new string[3];
+            users[2] = new string[3];
+            users[3] = new string[3];
+
+            //get data
+            users[0][1]
+
         }
     }
 }
