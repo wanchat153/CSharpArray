@@ -10,6 +10,14 @@ namespace CSharpArray
     {
         static void Main(string[] args)
         {
+            //Array
+            int[] ages = new int[3];
+            ages[0] = 15;
+            ages[1] = 18;
+            ages[2] = 19;
+            ages[3] = 20;
+
+            string[] name = { "A", "B", "C", "D", "E", "F", };
         }
     }
 }
