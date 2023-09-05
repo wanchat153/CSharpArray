@@ -10,14 +10,39 @@ namespace CSharpArray
     {
         static void Main(string[] args)
         {
-            //Array
-            int[] ages = new int[3];
-            ages[0] = 15;
-            ages[1] = 18;
-            ages[2] = 19;
-            ages[3] = 20;
+            ////Array
+            //int[] ages = new int[3];
+            //ages[0] = 15;
+            //ages[1] = 18;
+            //ages[2] = 19;
+            //ages[3] = 20;
 
-            string[] name = { "A", "B", "C", "D", "E", "F", };
+            //string[] name = { "A", "B", "C", "D", "E", "F", };
+
+            //Array Loop for
+            string[] firstName = new string[3];
+            string[] lastName = new string[3];
+            int[] salary = new int[3];
+
+            for (int i = 0; i < 3; i++)
+            {
+
+                Console.WriteLine("FirstName: ");
+                firstName[i] = Console.ReadLine();
+
+                Console.WriteLine("LastName: ");
+                lastName[i] = Console.ReadLine();
+
+                Console.WriteLine("Salary: ");
+                salary[i] = int.Parse(Console.ReadLine());
+
+                Console.WriteLine(
+                    "FirstName: " + firstName[i] + "\r\n" +
+                    "LastName: " + lastName[i] + "\r\n" +
+                    "Salary: " + salary[i]);
+            }
+            Console.WriteLine("END");
+            Console.ReadLine();
         }
     }
 }
