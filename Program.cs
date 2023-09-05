@@ -53,17 +53,41 @@ namespace CSharpArray
             //Console.WriteLine("END");
             //Console.ReadLine();
 
-            //Array 2 Dimension
-            string[,] customers = { { "GG", "WP" }, { "Wanchat", "M" } };
+            ////Array 2 Dimension
+            //string[,] customers = { { "GG", "WP" }, { "Wanchat", "M" } };
+            //string[][] users = new string[3][]; //[3]Main data []data
+            //users[0] = new string[3];
+            //users[1] = new string[3];
+            //users[2] = new string[3];
+            //users[3] = new string[3];
+
+            ////get data
+            //users[0][1]
+
+
+            //Array 2D Loop for
             string[][] users = new string[3][]; //[3]Main data []data
+
             users[0] = new string[3];
             users[1] = new string[3];
             users[2] = new string[3];
-            users[3] = new string[3];
 
-            //get data
-            users[0][1]
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Name: ");
+                users[i][0] = Console.ReadLine();
+                Console.WriteLine("Address: ");
+                users[i][1] = Console.ReadLine();
+                Console.WriteLine("Phone number: ");
+                users[i][2] = Console.ReadLine();
 
+                Console.WriteLine(
+                  "Name: " + users[i][0] + "\r\n" +
+                  "Address: " + users[i][1] + "\r\n" +
+                  "Phone number: " + users[i][2]);
+            }
+            Console.WriteLine("END");
+            Console.ReadLine();
         }
     }
 }
